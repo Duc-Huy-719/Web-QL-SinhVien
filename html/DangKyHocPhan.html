@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <title>Đăng ký học phần</title>
+    </head>
+    <body onload="time()" class="app sidebar-mini rtl">
+       <!-- Navbar-->
+        <header class="app-header">
+        <!-- Sidebar toggle button-->
+            <a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
+            <!-- Navbar Right Menu-->
+            <ul class="app-nav">
+            <!-- User Menu-->
+                <li><a class="app-nav__item" href="../html/TrangChu.html"><i class="fa-solid fa-arrow-right-from-bracket"></i></a></li>
+            </ul>
+        </header> 
+        <!-- Sidebar menu-->
+        <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+        <aside class="app-sidebar">
+            <div class="app-sidebar__user">
+                <div class="app-sidebar__user-avatar">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div>
+                    <p class="app-sidebar__user-name"><b>Họ Tên</b></p>
+                    <p class="app-sidebar__user-designation">Sinh viên-MSSV</p>
+                </div>
+            </div>
+            <hr>
+            <ul class="app-menu">
+                <li>
+                    <a class="app-menu__item" href="../html/TaiChinhSinhVien.html">
+                        <i class="fa-regular fa-user"></i>
+                        <span class="app-menu__label">Thông tin sinh viên</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="app-menu__item " href="../html/ThongBao.html">
+                        <i class="fa-regular fa-bell"></i> 
+                        <span class="app-menu__label">Thông báo</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="app-menu__item " href="../html/ThoiKhoaBieu.html">
+                        <i class="fa-solid fa-book"></i> 
+                        <span class="app-menu__label">Thời khóa biểu</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="app-menu__item " href="../html/KetQuaHocTap.html">
+                        <i class="fa-regular fa-calendar-days"></i> 
+                        <span class="app-menu__label">Kết quả học tập</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="app-menu__item " href="../html/TaiChinhSinhVien.html">
+                        <i class="fa-regular fa-compass"></i>
+                        <span class="app-menu__label">Tài chính sinh viên</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="app-menu__item " href="../html/DangKyHocPhan.html">
+                        <i class="fa-solid fa-chalkboard-user"></i>
+                        <span class="app-menu__label">Đăng ký học phần</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <main class="app-content">
+            <div class="app-title">
+                <ul class="app-breadcrumb breadcrumb side">
+                    <li class="breadcrumb-item active">
+                        <a href="#"><b>Đăng ký học phần</b></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="tile">
+                        <div class="tile-body">
+                            <p style="font-weight: bold;">Đăng ký theo kế hoạch</p>
+                            <table class="table table-hover table-bordered js-copytextarea" cellpadding="0" cellspacing="0" border="0"    id="sampleTable">
+                                <thead>
+                                    <tr>
+                                        <th>STT</th>
+                                        <th width="120">Mã Học phần</th>
+                                        <th>Tên Học phần</th>
+                                        <th width="100">Số TC</th>
+                                        <th>Số lượng HP</th>
+                                        <th>Đăng ký</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="6">Bắt buộc</td>
+                                    </tr>
+                                    <tr>
+                                        <td>01</td>
+                                        <td>INT423</td>
+                                        <td>Lập trình web</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>
+                                            <button class="btn btn-primary btn-sm edit" type="button" title="Đăng ký" id="show-emp"
+                                            data-toggle="modal" data-target="#ModalUP"><i class="fa-regular fa-pen-to-square"></i>
+                                          </button>
+                                        </td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td>02</td>
+                                        <td>INT439</td>
+                                        <td>TH Lập trình web</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>
+                                            <button class="btn btn-primary btn-sm edit" type="button" title="Đăng ký" id="show-emp"
+                                            data-toggle="modal" data-target="#ModalUP"><i class="fa-regular fa-pen-to-square"></i>
+                                          </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>03</td>
+                                        <td>INT304</td>
+                                        <td>Kiến trúc máy tính</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>
+                                            <button class="btn btn-primary btn-sm edit" type="button" title="Đăng ký" id="show-emp"
+                                            data-toggle="modal" data-target="#ModalUP"><i class="fa-regular fa-pen-to-square"></i>
+                                          </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>04</td>
+                                        <td>INT303</td>
+                                        <td>Cơ sở dữ liệu</td>
+                                        <td>3</td>
+                                        <td>1</td>
+                                        <td>
+                                            <button class="btn btn-primary btn-sm edit" type="button" title="Đăng ký" id="show-emp"
+                                            data-toggle="modal" data-target="#ModalUP"><i class="fa-regular fa-pen-to-square"></i>
+                                          </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>05</td>
+                                        <td>INT308</td>
+                                        <td>TH Cơ sở dữ liệu</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>
+                                            <button class="btn btn-primary btn-sm edit" type="button" title="Đăng ký" id="show-emp"
+                                            data-toggle="modal" data-target="#ModalUP"><i class="fa-regular fa-pen-to-square"></i>
+                                          </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="6">Tự chọn</td>
+                                    </tr>
+                                    <tr>
+                                        <td>06</td>
+                                        <td>ACC201</td>
+                                        <td>Kế toán đại cương</td>
+                                        <td>3</td>
+                                        <td>1</td>
+                                        <td>
+                                            <button class="btn btn-primary btn-sm edit" type="button" title="Đăng ký" id="show-emp"
+                                            data-toggle="modal" data-target="#ModalUP"><i class="fa-regular fa-pen-to-square"></i>
+                                          </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>06</td>
+                                        <td>VIE201</td>
+                                        <td>Kỹ năng sử dụng tiếng Việt</td>
+                                        <td>3</td>
+                                        <td>1</td>
+                                        <td>
+                                            <button class="btn btn-primary btn-sm edit" type="button" title="Đăng ký" id="show-emp"
+                                            data-toggle="modal" data-target="#ModalUP"><i class="fa-regular fa-pen-to-square"></i>
+                                          </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p style="font-weight: bold;">Kết quả đăng ký</p>
+                            <table class="table table-hover table-bordered js-copytextarea" cellpadding="0" cellspacing="0" border="0"    id="sampleTable">
+                                <thead>
+                                    <tr>
+                                        <th>STT</th>
+                                        <th width="120">Loại</th>
+                                        <th>Mã LHP</th>
+                                        <th width="100">Tên LHP</th>
+                                        <th>STC</th>
+                                        <th>GV</th>
+                                        <th>Lịch học</th>
+                                        <th>Từ ngày</th>
+                                        <th>Đến ngày</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>01</td>
+                                        <td>Lý thuyết</td>
+                                        <td>INT423</td>
+                                        <td>Lập trình web</td>
+                                        <td>2</td>
+                                        <td>Nguyễn Thị Nam</td>
+                                        <td>Thứ 5, tiết 1-5, tuần 1-6 BPH004 624 Âu cơ, phường 10, Quận Tân Bình TP.HCM</td>
+                                        <td>21/09/2023</td>
+                                        <td>26/10/2023</td>
+                                    </tr>
+                                    <tr>
+                                        <td>02</td>
+                                        <td>Thực hành</td>
+                                        <td>INT439</td>
+                                        <td>TH Lập trình web</td>
+                                        <td>2</td>
+                                        <td>Nguyễn Thị Nam</td>
+                                        <td>Thứ 5, tiết 7-10, tuần 1-6 BMT004 624 Âu cơ, phường 10, Quận Tân Bình TP.HCM</td>
+                                        <td>28/09/2023</td>
+                                        <td>30/10/2023</td>
+                                    </tr>
+                                    <tr>
+                                        <td>03</td>
+                                        <td>Lý thuyết</td>
+                                        <td>INT303</td>
+                                        <td>Cơ sở dữ liệu</td>
+                                        <td>3</td>
+                                        <td>Nguyễn Hữu Hương Xuân</td>
+                                        <td>Thứ 4, tiết 1-5, tuần 1-8 BPH012 624 Âu cơ, phường 10, Quận Tân Bình TP.HCM</td>
+                                        <td>28/09/2023</td>
+                                        <td>30/10/2023</td>
+                                    </tr>
+                                    <tr>
+                                        <td>04</td>
+                                        <td>Thực hành</td>
+                                        <td>INT308</td>
+                                        <td>TH Cơ sở dữ liệu</td>
+                                        <td>1</td>
+                                        <td>Nguyễn Hữu Hương Xuân</td>
+                                        <td>Thứ 4, tiết 7-10, tuần 2-7 BPH012 624 Âu cơ, phường 10, Quận Tân Bình TP.HCM</td>
+                                        <td>28/09/2023</td>
+                                        <td>30/10/2023</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </main>
+        <!-----Javascript----->
+    
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    </body>
+</html>

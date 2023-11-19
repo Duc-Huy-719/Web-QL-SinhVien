@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <title>Tài chính sinh viên</title>
+    </head>
+    <body onload="time()" class="app sidebar-mini rtl">
+       <!-- Navbar-->
+        <header class="app-header">
+        <!-- Sidebar toggle button-->
+            <a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
+            <!-- Navbar Right Menu-->
+            <ul class="app-nav">
+            <!-- User Menu-->
+                <li><a class="app-nav__item" href="../html/TrangChu.html"><i class="fa-solid fa-arrow-right-from-bracket"></i></a></li>
+            </ul>
+        </header> 
+        <!-- Sidebar menu-->
+        <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+        <aside class="app-sidebar">
+            <div class="app-sidebar__user">
+                <div class="app-sidebar__user-avatar">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div>
+                    <p class="app-sidebar__user-name"><b>Họ Tên</b></p>
+                    <p class="app-sidebar__user-designation">Sinh viên-MSSV</p>
+                </div>
+            </div>
+            <hr>
+            <ul class="app-menu">
+                <li>
+                    <a class="app-menu__item" href="../html/ThongTinCaNhan.html">
+                        <i class="fa-regular fa-user"></i>
+                        <span class="app-menu__label">Thông tin sinh viên</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="app-menu__item " href="../html/ThongBao.html">
+                        <i class="fa-regular fa-bell"></i> 
+                        <span class="app-menu__label">Thông báo</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="app-menu__item " href="../html/ThoiKhoaBieu.html">
+                        <i class="fa-solid fa-book"></i> 
+                        <span class="app-menu__label">Thời khóa biểu</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="app-menu__item " href="../html/KetQuaHocTap.html">
+                        <i class="fa-regular fa-calendar-days"></i> 
+                        <span class="app-menu__label">Kết quả học tập</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="app-menu__item " href="../html/TaiChinhSinhVien.html">
+                        <i class="fa-regular fa-compass"></i>
+                        <span class="app-menu__label">Tài chính sinh viên</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="app-menu__item " href="../html/DangKyHocPhan.html">
+                        <i class="fa-solid fa-chalkboard-user"></i>
+                        <span class="app-menu__label">Đăng ký học phần</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <main class="app-content">
+            <div class="app-title">
+                <ul class="app-breadcrumb breadcrumb side">
+                    <li class="breadcrumb-item active">
+                        <a href="#"><b>Tài chính sinh viên</b></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="tile">
+                        <div class="tile-body">
+                            <table class="table table-hover table-bordered js-copytextarea" cellpadding="0" cellspacing="0" border="0" id="sampleTable">
+                                <thead>
+                                    <tr>
+                                        <th width="270">Mã phí-Tên phí</th>
+                                        <th>Hình thức ĐK</th>
+                                        <th width="70">Phải đóng</th>
+                                        <th>Đã đóng</th>
+                                        <th>Cấn trừ</th>
+                                        <th>Miễn giảm</th>
+                                        <th>Còn nợ</th>
+                                        <th>Ngày đóng</th>
+                                      </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="8">Năm học: 2022-2023_Học kỳ: HK1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>211INT42301-Lập trình web (2 tc)</td>
+                                        <td>Ngoài kế hoạch</td>
+                                        <td>1,477,612</td>
+                                        <td>1,477,612</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>15/08/2022</td>
+                                    </tr>
+                                    <tr>
+                                        <td>211INT43901-TH Lập trình web (1 tc)</td>
+                                        <td>Ngoài kế hoạch</td>
+                                        <td>738,806</td>
+                                        <td>738,806</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>15/08/2022</td>
+                                    </tr>
+                                    <tr>
+                                        <td>211INT30401-Kiến trúc máy tính (2 tc)</td>
+                                        <td>Kế hoạch</td>
+                                        <td>1,477,612</td>
+                                        <td>1,477,612</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>15/08/2022</td>
+                                    </tr>
+                                    <tr>
+                                        <td>212INT30301-Cơ sở dữ liệu (3 tc)</td>
+                                        <td>Kế hoạch</td>
+                                        <td>2,216,418</td>
+                                        <td>2,216,418</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>15/08/2022</td>
+                                    </tr>
+                                    <tr>
+                                        <td>212INT30801-TH Cơ sở dữ liệu (1 tc)</td>
+                                        <td>Kế hoạch</td>
+                                        <td>738,806</td>
+                                        <td>738,806</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>15/08/2022</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" class="table-cell-body">Tổng học phí: 2022-2023 - HK1</td>
+                                        <td class="table-cell-body">6,649,254</td>
+                                        <td class="table-cell-body">6,649,254</td>
+                                        <td class="table-cell-body">0</td>
+                                        <td class="table-cell-body">0</td>
+                                        <td class="table-cell-body">0</td>
+                                        <td class="table-cell-body"></td>
+                                    </tr>
+                                        <td colspan="8">Năm học: 2022-2023_Học kỳ: HK2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>212INT30203-Cấu trúc dữ liệu và giải thuật (2 tc)</td>
+                                        <td>Kế hoạch</td>
+                                        <td>1,477,612</td>
+                                        <td>1,477,612</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>09/02/2023</td>
+                                    </tr>
+                                    <tr>
+                                        <td>212POL10708-Chủ nghĩa xã hội khoa học (2 tc)</td>
+                                        <td>Kế hoạch</td>
+                                        <td>1,477,612</td>
+                                        <td>1,477,612</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>09/02/2023</td>
+                                    </tr>
+                                    <tr>
+                                        <td>212INT31703-Lập trình C++ nâng cao [2 tc]</td>
+                                        <td>Ngoài kế hoạch</td>
+                                        <td>1,477,612</td>
+                                        <td>1,477,612</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>09/02/2023</td>
+                                    </tr>
+                                    <tr>
+                                        <td>212INT31808-TH Lập trình C++ nâng cao (1 tc)</td>
+                                        <td>Ngoài kế hoạch</td>
+                                        <td>738,806</td>
+                                        <td>738,806</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>09/02/2023</td>
+                                    </tr>
+                                    <tr>
+                                        <td>213POL10904-Tư tưởng Hồ Chí Minh (2 tc)</td>
+                                        <td>Ngoài kế hoạch</td>
+                                        <td>1,477,612</td>
+                                        <td>1,477,612</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>09/02/2023</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" class="table-cell-body">Tổng học phí: 2022-2023 - HK1</td>
+                                        <td class="table-cell-body">6,649,254</td>
+                                        <td class="table-cell-body">6,649,254</td>
+                                        <td class="table-cell-body">0</td>
+                                        <td class="table-cell-body">0</td>
+                                        <td class="table-cell-body">0</td>
+                                        <td class="table-cell-body"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </main>
+        <!-----Javascript----->
+    
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    </body>
+</html>

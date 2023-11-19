@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <title>Kết quả học tập</title>
+    </head>
+    <body onload="time()" class="app sidebar-mini rtl">
+       <!-- Navbar-->
+        <header class="app-header">
+        <!-- Sidebar toggle button-->
+            <a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
+            <!-- Navbar Right Menu-->
+            <ul class="app-nav">
+            <!-- User Menu-->
+                <li><a class="app-nav__item" href="../html/TrangChu.html"><i class="fa-solid fa-arrow-right-from-bracket"></i></a></li>
+            </ul>
+        </header> 
+        <!-- Sidebar menu-->
+        <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+        <aside class="app-sidebar">
+            <div class="app-sidebar__user">
+                <div class="app-sidebar__user-avatar">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div>
+                    <p class="app-sidebar__user-name"><b>Họ Tên</b></p>
+                    <p class="app-sidebar__user-designation">Sinh viên-MSSV</p>
+                </div>
+            </div>
+            <hr>
+            <ul class="app-menu">
+                <li>
+                    <a class="app-menu__item" href="../html/TaiChinhSinhVien.html">
+                        <i class="fa-regular fa-user"></i>
+                        <span class="app-menu__label">Thông tin sinh viên</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="app-menu__item " href="../html/ThongBao.html">
+                        <i class="fa-regular fa-bell"></i> 
+                        <span class="app-menu__label">Thông báo</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="app-menu__item " href="../html/ThoiKhoaBieu.html">
+                        <i class="fa-solid fa-book"></i> 
+                        <span class="app-menu__label">Thời khóa biểu</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="app-menu__item " href="../html/KetQuaHocTap.html">
+                        <i class="fa-regular fa-calendar-days"></i> 
+                        <span class="app-menu__label">Kết quả học tập</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="app-menu__item " href="../html/TaiChinhSinhVien.html">
+                        <i class="fa-regular fa-compass"></i>
+                        <span class="app-menu__label">Tài chính sinh viên</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="app-menu__item " href="../html/DangKyHocPhan.html">
+                        <i class="fa-solid fa-chalkboard-user"></i>
+                        <span class="app-menu__label">Đăng ký học phần</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <main class="app-content">
+            <div class="app-title">
+                <ul class="app-breadcrumb breadcrumb side">
+                    <li class="breadcrumb-item active">
+                        <a href="#"><b>Kết quả học tập</b></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="tile">
+                        <div class="tile-body">
+                            <table class="table table-hover table-bordered js-copytextarea" cellpadding="0" cellspacing="0" border="0" id="sampleTable">
+                                <thead>
+                                    <tr>
+                                        <th>STT</th>
+                                        <th width="120">Mã môn học</th>
+                                        <th>Tên Môn học</th>
+                                        <th width="100">Số TC</th>
+                                        <th>Điểm hệ 10</th>
+                                        <th>Điểm hệ 4</th>
+                                        <th>Điểm chữ</th>
+                                        <th>Kết quả</th>
+                                        <th>Ghi chú</th>
+                                      </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="9">Năm học: 2022-2023</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="9">Học kỳ: HK1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>01</td>
+                                        <td>INT423</td>
+                                        <td>Lập trình web</td>
+                                        <td>2</td>
+                                        <td>8.2</td>
+                                        <td>3.5</td>
+                                        <td>B+</td>
+                                        <td>Đạt</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>02</td>
+                                        <td>INT439</td>
+                                        <td>TH lập trình web</td>
+                                        <td>1</td>
+                                        <td>8.0</td>
+                                        <td>3.5</td>
+                                        <td>B+</td>
+                                        <td>Đạt</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>03</td>
+                                        <td>INT304</td>
+                                        <td>Kiến trúc máy tính</td>
+                                        <td>2</td>
+                                        <td>8.5</td>
+                                        <td>4.0</td>
+                                        <td>A</td>
+                                        <td>Đạt</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>04</td>
+                                        <td>INT303</td>
+                                        <td>Cơ sở dữ liệu</td>
+                                        <td>3</td>
+                                        <td>9.6</td>
+                                        <td>4.0</td>
+                                        <td>A</td>
+                                        <td>Đạt</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>05</td>
+                                        <td>INT308</td>
+                                        <td>TH Cơ sở dữ liệu</td>
+                                        <td>1</td>
+                                        <td>9.0</td>
+                                        <td>4.0</td>
+                                        <td>A</td>
+                                        <td>Đạt</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="9">Năm học: 2022-2023</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="9">Học kỳ: HK2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>06</td>
+                                        <td>INT302</td>
+                                        <td>Cấu trúc dữ liệu và giải thuật</td>
+                                        <td>2</td>
+                                        <td>8.3</td>
+                                        <td>3.5</td>
+                                        <td>B+</td>
+                                        <td>Đạt</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>07</td>
+                                        <td>POL107</td>
+                                        <td>Chủ nghĩa xã hội khoa học</td>
+                                        <td>2</td>
+                                        <td>7.4</td>
+                                        <td>3.0</td>
+                                        <td>B</td>
+                                        <td>Đạt</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>08</td>
+                                        <td>INT317</td>
+                                        <td>Lập trình C++ nâng cao</td>
+                                        <td>2</td>
+                                        <td>7.3</td>
+                                        <td>3.0</td>
+                                        <td>B</td>
+                                        <td>Đạt</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>09</td>
+                                        <td>INT318</td>
+                                        <td> TH Lập trình C++ nâng cao</td>
+                                        <td>1</td>
+                                        <td>6.9</td>
+                                        <td>2.5</td>
+                                        <td>C+</td>
+                                        <td>Đạt</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td>POL109</td>
+                                        <td> Tư tưởng Hồ Chí Minh</td>
+                                        <td>2</td>
+                                        <td>6.1</td>
+                                        <td>2.0</td>
+                                        <td>C</td>
+                                        <td>Đạt</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </main>
+        <!-----Javascript----->
+    
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Đăng nhập</title>
+</head>
+
+<body>
+    <div class="limiter">
+        <div class="container-login100">
+            <div class="wrap-login100">
+                <div class="div login100-pic js-tilt" data-tilt>
+                    <img src="../img/team.jpg" alt="img">
+                </div>
+                <form class="login100-form validate-from">
+                    <span class="login100-form-title">
+                        <b>ĐĂNG NHẬP</b>
+                    </span>
+                    <form action="">
+                        <div class="div wrap-input100 validate-input">
+                            <input class="input100" type="text" placeholder="Tên đăng nhập" name="username" id="username"/>
+                            <span class="focus-input100"></span>
+                            <span class="symbol-input100">
+                                <i class="fa-regular fa-user"></i>
+                            </span>
+                        </div>
+                        <div class="wrap-input100 validate-input">
+                            <input autocomplete="off" class="input100" type="password" placeholder="Mật khẩu"
+                                name="current-password" id="password-field">
+                            <span toggle="#password-field" class="bx fa-fw bx-hide field-icon click-eye"></span>
+                            <span class="focus-input100"></span>
+                            <span class="symbol-input100">
+                                <i class="fa-solid fa-lock"></i>
+                            </span>
+                        </div>
+
+                        <!--=====ĐĂNG NHẬP======-->
+                        <div class="container-login100-form-btn">
+                            
+                                <button class="btn btn-large"><a href="../html/ThongTinCaNhan.html"> Đăng Nhập</a></button>
+                            </a>
+                        </div>
+                        <!--=====LINK TÌM MẬT KHẨU======-->
+                        <div class="text-right p-t-12">
+                            <a href="../html/QuenMatKhau.html" class="txt2">
+                                Bạn quên mật khẩu?
+                            </a>
+                        </div>
+                    </form>
+                    <!--=====FOOTER======-->
+                    <div class="text-center p-t-70 txt2">
+                        Nguyễn Đức Huy Lê Long Thìn <i class="far fa-copyright" aria-hidden="true"></i>
+                        <script type="text/javascript">document.write(new Date().getFullYear());</script> 
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-----Javascript----->
+    
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+        //show - hide mật khẩu
+        function myFunction() {
+            var x = document.getElementById("myInput");
+            if (x.type === "password") {
+                x.type = "text"
+            } else {
+                x.type = "password";
+            }
+        }
+        $(".click-eye").click(function () {
+            $(this).toggleClass("bx-show bx-hide");
+            var input = $($(this).attr("toggle"));
+            if (input.attr("type") == "password") {
+                input.attr("type", "text");
+            } else {
+                input.attr("type", "password");
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <title>Thời khóa biểu</title>
+    </head>
+    <body onload="time()" class="app sidebar-mini rtl">
+       <!-- Navbar-->
+        <header class="app-header">
+        <!-- Sidebar toggle button-->
+            <a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
+            <!-- Navbar Right Menu-->
+            <ul class="app-nav">
+            <!-- User Menu-->
+                <li><a class="app-nav__item" href="../html/TrangChu.html"><i class="fa-solid fa-arrow-right-from-bracket"></i></a></li>
+            </ul>
+        </header> 
+        <!-- Sidebar menu-->
+        <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+        <aside class="app-sidebar">
+            <div class="app-sidebar__user">
+                <div class="app-sidebar__user-avatar">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div>
+                    <p class="app-sidebar__user-name"><b>Họ Tên</b></p>
+                    <p class="app-sidebar__user-designation">Sinh viên-MSSV</p>
+                </div>
+            </div>
+            <hr>
+            <ul class="app-menu">
+                <li>
+                    <a class="app-menu__item" href="../html/ThongTinCaNhan.html">
+                        <i class="fa-regular fa-user"></i>
+                        <span class="app-menu__label">Thông tin sinh viên</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="app-menu__item " href="../html/ThongBao.html">
+                        <i class="fa-regular fa-bell"></i> 
+                        <span class="app-menu__label">Thông báo</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="app-menu__item " href="../html/ThoiKhoaBieu.html">
+                        <i class="fa-solid fa-book"></i> 
+                        <span class="app-menu__label">Thời khóa biểu</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="app-menu__item " href="../html/KetQuaHocTap.html">
+                        <i class="fa-regular fa-calendar-days"></i> 
+                        <span class="app-menu__label">Kết quả học tập</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="app-menu__item " href="../html/TaiChinhSinhVien.html">
+                        <i class="fa-regular fa-compass"></i>
+                        <span class="app-menu__label">Tài chính sinh viên</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="app-menu__item " href="../html/DangKyHocPhan.html">
+                        <i class="fa-solid fa-chalkboard-user"></i>
+                        <span class="app-menu__label">Đăng ký học phần</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <main class="app-content">
+            <div class="app-title">
+                <ul class="app-breadcrumb breadcrumb side">
+                    <li class="breadcrumb-item active">
+                        <a href="#"><b>Thời Khóa biểu</b></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="div row">
+                <div class="col-md-12">
+                    <div class="title">
+                        <div class="title-body">
+                           <form class="row">
+                                <div class="form-group col-md-4">
+                                    <label for="exampleSelect1"class="control-label">Năm học</label>
+                                    <select class="form-control" id="exampleSelect1">
+                                        <option>--Chọn năm học--</option>
+                                        <option>2024-2025</option>
+                                        <option>2023-2024</option>
+                                        <option>2022-2023</option>
+                                        <option>2021-2022</option>
+                                        <option>2020-2021</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="exampleSelect1"class="control-label">Học kỳ</label>
+                                    <select class="form-control" id="exampleSelect1">
+                                        <option>--Chọn học kỳ --</option>
+                                        <option>Học kỳ 1</option>
+                                        <option>Học kỳ 2</option>
+                                        <option>Học kỳ 3</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="exampleSelect1"class="control-label">Tuần</label>
+                                    <select class="form-control" id="exampleSelect1">
+                                        <option>--Chọn tuần --</option>
+                                        <option>Tuần 1</option>
+                                        <option>Tuần 2</option>
+                                        <option>Tuần 3</option>
+                                        <option>Tuần 4</option>
+                                        <option>Tuần 5</option>
+                                        <option>Tuần 6</option>
+                                    </select>
+                                </div>
+                                <div class="table-container">
+                                    <table class="table-root" id="psc-table-head">
+                                        <thead class="table-head">
+                                            <tr class="table-row">
+                                                <th class="table-cell-head" scope="col">Tiết<br></th>
+                                                <th class="table-cell-head" scope="col">Thứ 2<br>20/11/2023</th>
+                                                <th class="table-cell-head" scope="col">Thứ 3<br>21/11/2023</th>
+                                                <th class="table-cell-head" scope="col">Thứ 4<br>22/11/2023</th>
+                                                <th class="table-cell-head" scope="col">Thứ 5<br>23/11/2023</th>
+                                                <th class="table-cell-head" scope="col">Thứ 6<br>24/11/2023</th>
+                                                <th class="table-cell-head" scope="col">Thứ 7<br>25/11/2023</th>
+                                                <th class="table-cell-head" scope="col">Chủ nhật<br>26/11/2023</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="table-body">
+                                            <tr class="table-row-span">
+                                                <td class="table-cell-body">1</td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                            </tr>
+                                            <tr class="table-row-span">
+                                                <td class="table-cell-body">2</td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body" rowspan="4">
+                                                    <div class="DetailSchedule">
+                                                        <span style="font-size:15px; font-weight:bold;color:#042f43">ONLINE 29</span>
+                                                        <br><span style="color: red;font-weight:bold">TH Cấu trúc dữ liệu và giải thuật (INT307)</span>
+                                                        <br><span style="color:#0a4358">LHP: 212INT30705</span><br><span style="color:#0a4358">Số tiết: 4</span>
+                                                        <br><span style="color:#0a4358">Tiết: 2-5</span><br><span style="color:#0a4358">Giờ bắt đầu: 08h00</span>
+                                                        <br><span style="color: blue">GV: Đỗ Đình Trang</span>
+                                                        <br><span style="color: blue">Email: trangdd@vhu.edu.vn</span>
+                                                    </div>
+                                                </td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body" rowspan="4">
+                                                    <div class="DetailSchedule">
+                                                        <span style="font-size:15px; font-weight:bold;color:#042f43">ONLINE 27</span>
+                                                        <br><span style="color: red;font-weight:bold">Cơ sở dữ liệu (INT303)</span>
+                                                        <br><span style="color:#0a4358">LHP: 212INT30301</span><br><span style="color:#0a4358">Số tiết: 4</span>
+                                                        <br><span style="color:#0a4358">Tiết: 2-5</span><br><span style="color:#0a4358">Giờ bắt đầu: 08h00</span>
+                                                        <br><span style="color: blue">GV: Nguyễn Hữu Hương Xuân</span>
+                                                        <br><span style="color: blue">Email: nguyenhuuhuongxuan@gmail.com</span>
+                                                    </div>
+                                                </td>
+                                                <td class="table-cell-body"></td>
+                                            </tr>
+                                            <tr class="table-row-span">
+                                                <td class="table-cell-body">3</td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                            </tr>
+                                            <tr class="table-row-span">
+                                                <td class="table-cell-body">4</td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                            </tr>
+                                            <tr class="table-row-span">
+                                                <td class="table-cell-body">5</td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                            </tr>
+                                            <tr class="table-row-span">
+                                                <td class="table-cell-body">6</td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                            </tr>
+                                            <tr class="table-row-span">
+                                                <td class="table-cell-body">7</td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body" rowspan="4">
+                                                    <div class="DetailSchedule">
+                                                        <span style="font-size:15px; font-weight:bold;color:#042f43">ONLINE 36</span>
+                                                        <br><span style="color: red;font-weight:bold">TH Lập trình C++ nâng cao (INT318)</span>
+                                                        <br><span style="color:#0a4358">LHP: 212INT31808</span>
+                                                        <br><span style="color:#0a4358">Số tiết: 4</span>
+                                                        <br><span style="color:#0a4358">Tiết: 7-10</span>
+                                                        <br><span style="color:#0a4358">Giờ bắt đầu: 13h15</span>
+                                                        <br><span style="color: blue">GV: Đỗ Đình Trang</span>
+                                                        <br><span style="color: blue">Email: trangdd@vhu.edu.vn</span>
+                                                    </div>
+                                                </td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body" rowspan="4">
+                                                    <div class="DetailSchedule">
+                                                        <span style="font-size:15px; font-weight:bold;color:#042f43">ONLINE 29</span>
+                                                        <br><span style="color: red;font-weight:bold">TH Cơ sở dữ liệu (INT308)</span>
+                                                        <br><span style="color:#0a4358">LHP: 212INT30801</span>
+                                                        <br><span style="color:#0a4358">Số tiết: 4</span>
+                                                        <br><span style="color:#0a4358">Tiết: 7-10</span>
+                                                        <br><span style="color:#0a4358">Giờ bắt đầu: 13h15</span>
+                                                        <br><span style="color: blue">GV: Nguyễn Hữu Hương Xuân</span>
+                                                        <br><span style="color: blue">Email: nguyenhuuhuongxuan@gmail.com</span>
+                                                    </div>
+                                                </td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                            </tr>
+                                            <tr class="table-row-span">
+                                                <td class="table-cell-body">8</td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                            </tr>
+                                            <tr class="table-row-span">
+                                                <td class="table-cell-body">9</td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                            </tr>
+                                            <tr class="table-row-span">
+                                                <td class="table-cell-body">10</td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                            </tr>
+                                            <tr class="table-row-span">
+                                                <td class="table-cell-body">11</td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                            </tr>
+                                            <tr class="table-row-span">
+                                                <td class="table-cell-body">12</td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                            </tr>
+                                            <<tr class="table-row-span">
+                                                <td class="table-cell-body">13</td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                            </tr>
+                                            <tr class="table-row-span">
+                                                <td class="table-cell-body">14</td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                            </tr>
+                                            <tr class="table-row-span">
+                                                <td class="table-cell-body">15</td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                            </tr>
+                                            <tr class="table-row-span">
+                                                <td class="table-cell-body">16</td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                                <td class="table-cell-body"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </form> 
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-----Javascript----->
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/jquery-3.2.1.min.js"></script>
+    </body>
+</html>
